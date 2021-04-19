@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 
 const links = [
     {
-        to: '/',
+        to: '/hw_21',
         label: 'Home'
     },
     {

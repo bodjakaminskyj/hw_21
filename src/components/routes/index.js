@@ -5,7 +5,7 @@ import { Publication } from "../pages/publication";
 
 export const appRoutes = [
     {
-        path: '/',
+        path: '/hw_21',
         exact: true,
         component: HomePage
     },
