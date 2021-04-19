@@ -1,12 +1,25 @@
+import { Route, Switch } from 'react-router';
 import './App.css';
-import Contacts from './components/Contacts';
-import './components/style.css';
-
+import {appRoutes} from './components/routes/'
+import { Navigation } from './components/pages/navigation';
 
 function App() {
   return (
     <div className="App">
-      <Contacts/>
+      <header className="header">
+        <Navigation/>
+      </header>
+      <main>
+        <Switch>
+      
+          {appRoutes.map(route =>(
+            <Route key={route.path} {...route}/>
+          ))}
+
+         
+        </Switch>
+      </main>
+     
       
     </div>
   );

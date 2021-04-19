@@ -1,38 +1,142 @@
-.App {
+.navigation{
+  width: 100%;
+  height: 40px;
+}
+.navigation ul {
+  list-style: none; 
+  margin-top:25px; 
+}
+.navigation a {
+  text-decoration: none; 
+  background:#30A8E6; 
+  color:#fff;
+  padding:10px;
+  font-family: arial; 
+  border-radius:4px; 
+}
+.navigation a:hover {
+  background:#1C85BB;
+}
+.navigation li {
+  float:left; 
+  width: 5%;
+  margin-left: 15%; 
+  
+}
+/* Home */
+.home img{
+  margin-left: 25%;
+  width: 50%;
+}
+.home h1{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Contact */
+.contact{
+  border: 4px double black;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 40%;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+.search-panel{
+  display: flex;
+  width: 40%;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+.search{
+  margin-left: 5%;
+  width: 64px;
+  margin-top: 10px;
+}
+nav img{
+  width: 25px;
+  margin-bottom: -12px;
+  margin-right: 10px;
+}
+.contacts{
+  margin-left: 10%;
+}
+nav{
+  margin: 25px;
+
+}
+.icon-gender{
+  width: 120px;
+  height: 120px;
+}
+.M, .F, .N{
+  font-size: 20pt;
+  margin-left: 25px;
+}
+/* Publication */
+.cont{
+  margin-left: 30%;
+  margin-right: 25%;
+  margin-top: 25px;
+  display: flex;
+  border: 1px solid #35424c;
+  width: 40%;
+  padding: 5px;
+  background: #0d1a27;
+}
+.content1{
+  text-align: left;
+  margin: 5px;
+  font-size: 8pt;
+}
+.logo{
+  padding: 5px;
+  border-radius: 100px;
+  width: 50px;
+}
+.post_image{
+  width: 100%;
+  border-radius: 20px;
+}
+.icon{
+  width: 8pt;
+  margin-bottom: -2px;
+}
+.nickname{
+color: gray;
+font-size: 7pt;
+}
+.name, .content{
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.name{
+  font-weight: bold;
 }
+.icon_panel{
+  color: gray;
+  font-size: 10pt;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.icon_panel label{
+  margin-left: 5px;
+  margin-right: 15%;
+}
+.icon_panel img{
+  margin-left: 15px;
+  width: 10pt;
+  height: 10pt;
+}
+/*Photo*/
+.photos{
+  margin-left: 27.5%;
+  width: 45%;
+  border: 4px dashed black;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2vw;
+}
+.photo{
+  margin: 5px;
+  
+}
+.photo img{
+  width: 100%;
 }
